@@ -1,7 +1,6 @@
-# 🖼️ ImageProcessor
+# ImageProcessor
 
-A lightweight **C++ image manipulation library and CLI tool** powered by [stb_image](https://github.com/nothings/stb) and [stb_image_write](https://github.com/nothings/stb).  
-Supports basic editing operations (invert, grayscale, brightness, filters, blending, kernels, etc.) with a simple object-oriented interface.
+A lightweight **C++ image processing library. Supports basic editing operations (invert, grayscale, brightness, filters, blending, kernels, etc.) with a simple object-oriented interface.
 
 ---
 
@@ -28,7 +27,7 @@ ImageProcessor/
 
 ---
 
-## ⚙️ Features
+## Features
 
 - Load and save images (PNG, JPG, BMP)
 - Pixel-level access via `ImageData`
@@ -45,7 +44,7 @@ ImageProcessor/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - CMake ≥ 3.16  
@@ -71,17 +70,9 @@ cmake --build build --config Release
 ./bin/ImageProcessor
 ```
 
-For **VS Code users**:
-- Install the **CMake Tools** extension.
-- Use the "Build" and "Run" buttons in the status bar.
-- Ensure your launch configuration sets:
-  ```json
-  "cwd": "${workspaceFolder}"
-  ```
-
 ---
 
-## 🧪 Example Usage
+## Example Usage
 
 ```cpp
 #include "ImageData.h"
@@ -105,24 +96,8 @@ The provided `CMakeLists.txt`:
 - Builds the project as a standalone executable.
 - Includes both the `inc/` and `inc/stb/` directories.
 - Automatically creates the `output/` directory after build.
-- You can optionally copy the `input/` folder into the build directory by adding:
-  ```cmake
-  add_custom_command(TARGET ImageProcessor POST_BUILD
-      COMMAND ${CMAKE_COMMAND} -E copy_directory
-          ${CMAKE_SOURCE_DIR}/input
-          $<TARGET_FILE_DIR:ImageProcessor>/input
-  )
+
   ```
-
----
-
-## 🧩 Troubleshooting
-
-| Problem | Cause | Fix |
-|----------|--------|-----|
-| `Failed to load image` | Working directory not set correctly | Set `"cwd": "${workspaceFolder}"` in `launch.json` |
-| No output file created | `output/` folder missing | CMake auto-creates it, but verify manually |
-| `std::clamp` not found | Old compiler or C++ standard | Ensure `CMAKE_CXX_STANDARD 20` is set |
 
 ---
 
@@ -134,17 +109,3 @@ The provided `CMakeLists.txt`:
 Both are included locally in `inc/stb/`.
 
 ---
-
-## 🧠 Future Improvements
-
-- Add bilinear/bicubic resize  
-- Add gamma correction and tone mapping  
-- Add alpha-aware blending (normalized alpha)  
-- Add CLI arguments (e.g., `ImageProcessor input.jpg --invert --save output.png`)  
-- Split implementation into `.cpp` files for faster rebuilds  
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
