@@ -97,8 +97,6 @@ The provided `CMakeLists.txt`:
 - Includes both the `inc/` and `inc/stb/` directories.
 - Automatically creates the `output/` directory after build.
 
-  ```
-
 ---
 
 ## 📚 Dependencies
