@@ -90,7 +90,7 @@ int main() {
 
 ---
 
-## 🧰 CMake Notes
+## CMake Notes
 
 The provided `CMakeLists.txt`:
 - Builds the project as a standalone executable.
@@ -99,7 +99,7 @@ The provided `CMakeLists.txt`:
 
 ---
 
-## 📚 Dependencies
+## Dependencies
 
 - [stb_image.h](https://github.com/nothings/stb/blob/master/stb_image.h)  
 - [stb_image_write.h](https://github.com/nothings/stb/blob/master/stb_image_write.h)
