@@ -4,7 +4,7 @@ A lightweight **C++ image processing library. Supports basic editing operations 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ImageProcessor/
