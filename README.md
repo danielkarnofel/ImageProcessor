@@ -7,39 +7,51 @@ A lightweight C++ image processing library. Supports basic editing operations (i
 ## A Few Example Outputs
 
 ### Unedited input images
-<p align="center">
+<p float="left">
   <img src="input/cat.png" width="30%">
   <img src="input/dog.png" width="30%">
 </p>
 
-### Emboss
-<p align="center">
-  <img src="testOutputs/cat_emboss.png" width="30%">
-  <img src="testOutputs/dog_emboss.png" width="30%">
-</p>
-
 ### Invert
-<p align="center">
+<p float="left">
   <img src="testOutputs/cat_invert.png" width="30%">
   <img src="testOutputs/dog_invert.png" width="30%">
 </p>
 
 ### Noise
-<p align="center">
+<p float="left">
   <img src="testOutputs/cat_noise.png" width="30%">
   <img src="testOutputs/dog_noise.png" width="30%">
 </p>
 
 ### Threshold
-<p align="center">
+<p float="left">
   <img src="testOutputs/cat_threshold.png" width="30%">
   <img src="testOutputs/dog_threshold.png" width="30%">
 </p>
 
-### Sobel
-<p align="center">
+### Emboss Kernel
+<p float="left">
+  <img src="testOutputs/cat_emboss.png" width="30%">
+  <img src="testOutputs/dog_emboss.png" width="30%">
+</p>
+
+### Sobel Kernel
+<p float="left">
   <img src="testOutputs/cat_sobelX.png" width="30%">
   <img src="testOutputs/dog_sobelX.png" width="30%">
+</p>
+
+### Max and Min Composition
+<p float="left">
+  <img src="testOutputs/difference_dog_cat.png" width="30%">
+  <img src="testOutputs/add_dog_cat.png" width="30%">
+</p>
+
+### Add and Subtract Composition
+<p float="left">
+  <img src="testOutputs/add_dog_cat.png" width="30%">
+  <img src="testOutputs/subtract_dog_cat.png" width="30%">
 </p>
 
 ---
