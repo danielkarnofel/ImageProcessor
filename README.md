@@ -4,6 +4,23 @@ A lightweight C++ image processing library. Supports basic editing operations (i
 
 ---
 
+## Features
+
+- Load and save images (PNG, JPG, BMP)
+- Pixel-level access via `ImageData`
+- Image operations:
+  - Grayscale, thresholding, inversion
+  - Brightness, contrast, tint, noise
+- Geometry:
+  - Flip, rotate, resize, crop
+- Compositing:
+  - Blend, multiply, screen, overlay, add/subtract/difference
+- Convolution filters:
+  - Box blur, Gaussian blur, Sobel, Laplacian, sharpen, emboss
+- Custom kernel support (fixed-size or dynamic)
+
+---
+
 ## A Few Example Outputs
 
 ### Unedited input images
@@ -76,23 +93,6 @@ ImageProcessor/
 │   └── dog.jpg
 └── output/
 ```
-
----
-
-## Features
-
-- Load and save images (PNG, JPG, BMP)
-- Pixel-level access via `ImageData`
-- Image operations:
-  - Grayscale, thresholding, inversion
-  - Brightness, contrast, tint, noise
-- Geometry:
-  - Flip, rotate, resize, crop
-- Compositing:
-  - Blend, multiply, screen, overlay, add/subtract/difference
-- Convolution filters:
-  - Box blur, Gaussian blur, Sobel, Laplacian, sharpen, emboss
-- Custom kernel support (fixed-size or dynamic)
 
 ---
 
