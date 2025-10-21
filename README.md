@@ -1,6 +1,13 @@
 # ImageProcessor
 
-A lightweight **C++ image processing library. Supports basic editing operations (invert, grayscale, brightness, filters, blending, kernels, etc.) with a simple object-oriented interface.
+A lightweight C++ image processing library. Supports basic editing operations (invert, grayscale, brightness, filters, blending, kernels, etc.) with a simple object-oriented interface.
+
+---
+
+<p align="center">
+  <img src="input/cat.png" width="45%">
+  <img src="input/dog.png" width="45%">
+</p>
 
 ---
 
@@ -44,14 +51,9 @@ ImageProcessor/
 
 ---
 
-## Getting Started
-
 ### Prerequisites
 - CMake ≥ 3.16  
-- C++20-compatible compiler:
-  - MSVC (Visual Studio 2019+)
-  - GCC ≥ 9
-  - Clang ≥ 9
+- C++20-compatible compiler
 
 ### Build Instructions
 
