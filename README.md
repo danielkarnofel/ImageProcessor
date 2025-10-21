@@ -44,8 +44,8 @@ A lightweight C++ image processing library. Supports basic editing operations (i
 
 ### Max and Min Composition
 <p float="left">
-  <img src="testOutputs/difference_dog_cat.png" width="30%">
-  <img src="testOutputs/add_dog_cat.png" width="30%">
+  <img src="testOutputs/max_dog_cat.png" width="30%">
+  <img src="testOutputs/min_dog_cat.png" width="30%">
 </p>
 
 ### Add and Subtract Composition
