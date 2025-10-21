@@ -2,8 +2,6 @@
 
 A lightweight C++ image processing library. Supports basic editing operations (invert, grayscale, brightness, filters, blending, kernels, etc.) with a simple object-oriented interface.
 
----
-
 ## Features
 
 - Load and save images (PNG, JPG, BMP)
@@ -18,8 +16,6 @@ A lightweight C++ image processing library. Supports basic editing operations (i
 - Convolution filters:
   - Box blur, Gaussian blur, Sobel, Laplacian, sharpen, emboss
 - Custom kernel support (fixed-size or dynamic)
-
----
 
 ## A Few Example Outputs
 
@@ -71,8 +67,6 @@ A lightweight C++ image processing library. Supports basic editing operations (i
   <img src="testOutputs/subtract_dog_cat.png" width="30%">
 </p>
 
----
-
 ## Project Structure
 
 ```
@@ -93,8 +87,6 @@ ImageProcessor/
 │   └── dog.jpg
 └── output/
 ```
-
----
 
 ### Prerequisites
 - CMake ≥ 3.16  
@@ -117,9 +109,14 @@ cmake --build build --config Release
 ./bin/ImageProcessor
 ```
 
----
+### CMake Notes
 
-## Example Usage
+The provided `CMakeLists.txt`:
+- Builds the project as a standalone executable.
+- Includes both the `inc/` and `inc/stb/` directories.
+- Automatically creates the `output/` directory after build.
+
+### Example Usage
 
 ```cpp
 #include "ImageData.h"
@@ -134,17 +131,6 @@ int main() {
     return 0;
 }
 ```
-
----
-
-## CMake Notes
-
-The provided `CMakeLists.txt`:
-- Builds the project as a standalone executable.
-- Includes both the `inc/` and `inc/stb/` directories.
-- Automatically creates the `output/` directory after build.
-
----
 
 ## Dependencies
 
